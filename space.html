@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SpaceX Launch</title>
+  <script src="space_x.js" defer></script> 
+  <style media="screen">
+    .Main-div{
+      display:grid;
+	  grid-template-columns:auto auto;
+	  grid-template-areas:"ab bb";
+	  grid-gap:10%;
+    }
+    .buttonlist {
+      padding:10px;
+      position: relative;
+      top: 0;
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: auto auto;
+	  grid-template-rows:1fr;
+      grid-gap: 10px;
+	  background-color:white;
+    }
+
+    button {
+      background-color:lightgreen;
+      border-radius:10px;
+      width: auto;
+      height: 25px;
+    }
+    button:hover{cursor:pointer;}
+    h3{
+      grid-column:1/-1;
+      grid-gap:0px;
+    }
+    hr{
+      width:100%;
+      grid-column:1/-1;
+    }
+    h2{
+      grid-column:1/-1;
+    }
+
+.img-div{
+
+  grid-column:1/-1;
+  
+  }
+.img-div1{
+display:grid;grid-template-columns:auto auto auto auto;grid-gap:10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .Main-div{
+  grid-template-columns:1fr;
+  grid-template-areas:"ab"
+  "bb";
+  }
+  .body{
+  background:red;
+  }
+}
+.launch_success{
+grid-column:1/-1;
+}
+
+.landing_success{
+grid-column:1/-1;
+}
+.allbuttons{
+grid-area:ab;
+}
+#Imgs{
+grid-area:bb;}
+  </style>
+</head>
+
+<body>
+  <div class="Main-div">
+    <div class="allbuttons" style="">
+      <div class="buttonlist">
+        <h3 style="background">Launch:year</h3>
+        <hr>
+
+          <div class="img-div" id="img1" style="display:grid;grid-template-columns:auto auto;grid-gap:10px;">
+
+          </div>
+		  
+		  <div class="launch_success" style="height:auto;width:auto">
+		  <h2>SuccessFul Launch</h2>
+        <hr>
+        <button type="button" name="button" id=True>true</button>
+        <button type="button" name="button" id=False>false</button>
+		  </div>
+		  <div class="landing_success" style="height:auto;width:auto">
+		  <h2>Successful Landing</h2>
+        <hr>
+        <button type="button" name="button" id=True >true</button>
+        <button type="button" name="button" id=False>false</button>
+		</div>
+        <!--
+		
+      -->
+      </div>
+    </div>
+<div style="" id="Imgs">
+<div class="img-div1" id="img1" style=""></div>
+<div>
+  </div>
+</body>
+</html>
